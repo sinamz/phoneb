@@ -1,0 +1,7 @@
+<h3>This page lists all the entries in the phonebook. Click on any name and you will be taken to a page with their detailed info.</h3>
+
+{% for contact in contact_list %}
+    <ul>
+        <li><a href="{{ contact.id }}/">{{ contact.name }}</a></li>
+    </ul>
+{% endfor %}
